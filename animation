@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Animation function
+animate() {
+  local text="$1"
+  local delay="$2"
+  
+  while true; do
+    echo -ne "$text\r"
+    sleep "$delay"
+    echo -ne "           \r"
+    sleep "$delay"
+  done
+}
+
+# Start animation in the background
+animate "Exiting......" 0.5 &
+animation_pid=$!
+
+# Simulate a task or process
+sleep 5
+
+# Stop animation and clean up
+kill "$animation_pid" >/dev/null 2>&1
+echo "Animation stopped."
