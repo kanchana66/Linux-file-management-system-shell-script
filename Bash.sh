@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Wlecome 
 echo "Welcome Simple File Management System"
 echo "-------------------------------------"
 echo "       "
@@ -11,6 +12,7 @@ echo "             "
 echo "$list"
 echo "- - - - - - - - -- - - - - - - - - - -"
 
+#selection loop
 system=("Delete_Directory" "Make_Directory" "Rename_Directory" "Exit")
 
 select choice in ${system[@]}
