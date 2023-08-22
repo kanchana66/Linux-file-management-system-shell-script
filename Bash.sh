@@ -12,9 +12,10 @@ echo "This files and Directories are in your Direcrory: "
 echo "             "
 echo "$list"
 echo "- - - - - - - - -- - - - - - - - - - -"
+echo "hello world"
 
 #selection loop
-system=("Delete_Directory" "Make_Directory" "Rename_Directory" "Exit")
+system=("Delete_Directory" "Make_Directory" "Rename_Directory" "Make_File" "Exit")
 
 select choice in ${system[@]}
      do
@@ -55,6 +56,17 @@ select choice in ${system[@]}
 		fi
 	       ;;
 
+
+       "Make_File")
+	       echo "you select Make File Option"
+	       read -t 8 -p "File Name: " nn
+	       read -t 8 -p "file type: " tt
+	       if [ -z $nn ] || [ -z $tt ];then
+		       echo -e "\nNo File name or File Type Resived"
+	       else
+		       touch $nn.$tt
+	       fi
+	       ;;
 
 	       "Exit")
 		echo "Thank you for using our simple system"
