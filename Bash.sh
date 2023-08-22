@@ -2,6 +2,8 @@
 
 #Wlecome 
 echo "Welcome Simple File Management System"
+usrd=`whoami`
+echo "            Hello $userd !!" 
 echo "-------------------------------------"
 echo "       "
 path=`pwd`
