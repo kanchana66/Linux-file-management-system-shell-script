@@ -13,6 +13,7 @@ echo "This files and Directories are in your Direcrory: "
 echo "             "
 echo "$list"
 echo "- - - - - - - - -- - - - - - - - - - -"
+echo "User name: $usrd" >> info.txt
 
 #selection loop
 system=("Delete_Directory" "Make_Directory" "Rename_Directory" "Exit")
