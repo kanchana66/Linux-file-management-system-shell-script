@@ -1,21 +1,19 @@
 #! /bin/bash
 
-usr=$(whoami)
-
 inputs=("Desktop" "Downloads" "Documents" "Exit")
 
 select choice in "${inputs[@]}";do
 	case $choice in
 		"Desktop")
-			cd /home/$usr/Desktop
+			cd $HOME/Desktop
 			echo "now you are currently in: `pwd`"
 			;;
 		"Downloads")
-			cd /home/$usr/Downloads
+			cd $HOME/Downloads
 			echo "now you are currently in: `pwd`"
 			;;
 		"Documents")
-		        cd /home/$usr/Documents
+		        cd $HOME/Documents
 			echo "now you are currently in: `pwd`"
 			;;
 		"Exit")
