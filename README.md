@@ -1,4 +1,9 @@
-# Linux File Management System
+<h1> Linux File Management System </h1>
+
+
+<p align="center" >
+<img src="https://github.com/kanchana66/Linux-file-management-system-shell-script/blob/master/bash-logo.jpg" >
+</p>
 
 This is a simple Linux file management system that allows you to create, delete directories, create files, and navigate the file system using the command line.
 
