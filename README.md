@@ -22,7 +22,25 @@ Before you begin, ensure you have the following software installed:
 
 ### Installation
 
-1. Clone the repository to your local machine.
+1. Change Directory
+
+   ```bash
+   cd Linux-file-management-system-shell-script
+
+2. Clone the repository to your local machine.
 
    ```bash
    git clone https://github.com/kanchana66/Linux-file-management-system-shell-script.git
+
+3. Add permission to execute.
+
+   ```bash
+   sudo chmod +x file-naviagate.sh; sudo chmod +x bash.sh
+
+   
+4. Run Programme
+   
+   ```bash
+   ./file-naviagate.sh || ./bash.sh
+
+   
