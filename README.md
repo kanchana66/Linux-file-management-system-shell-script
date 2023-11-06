@@ -26,3 +26,7 @@ Before you begin, ensure you have the following software installed:
 
    ```bash
    git clone https://github.com/kanchana66/Linux-file-management-system-shell-script.git
+2. Add permition to execute.
+
+   ```bash
+   sudo chmod +x 
